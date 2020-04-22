@@ -1,4 +1,4 @@
-package examples;
+package tictactoe.examples;
 
 import java.util.HashMap;
 import java.util.HashSet;

@@ -1,4 +1,4 @@
-package tasks;
+package tictactoe;
 
 public class PowerOfThree {
     public static boolean powerOfThree(int a) {

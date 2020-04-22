@@ -7,4 +7,14 @@ public class ModelState {
 //    public ModelState makeTurn( .... ) {
 //        return new ModelState( ... )
 //    }
+
+    final int[][] gamestart = new int[3][3];
+
+
+
+
+
+
+
+
 }

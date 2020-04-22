@@ -1,6 +1,7 @@
 package tasks;
 
 import org.junit.Test;
+import tictactoe.PowerOfThree;
 
 import static org.junit.Assert.assertFalse;
 import static org.junit.Assert.assertTrue;

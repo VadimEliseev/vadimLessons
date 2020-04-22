@@ -1,4 +1,4 @@
-package examples;
+package tictactoe.examples;
 
 public class ExceptionsExample {
     public static void main(String[] args) {

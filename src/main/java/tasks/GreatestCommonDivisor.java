@@ -1,7 +1,10 @@
 package tasks;
 
+import java.util.ArrayList;
+import java.util.List;
+
 public class GreatestCommonDivisor {
-    public static int gcd(int a, int b){
+    public static int gcd(int a, int b) {
         /*
                               ^      ^
                               |      |
@@ -15,10 +18,35 @@ public class GreatestCommonDivisor {
 
         напоминаю, что наибольший общий делитель лежит в дапазоне от 2 до наименьшего из чисел
          */
+        List<Integer> list = new ArrayList<Integer>();
+        if (a == b)
+            return a;
+        else if (a > b) {
 
+            for (int d = 2; d < b; d++) {
+                int i = a / d;
+                if (a % d == 0)
+                    list.add(i);
+            }
+            for (int d = list.size() - 1; d > 0; d--) {
+                if (b % list.get(d - 1) != 0)
+                    list.remove(d - 1);
+            }
+            return list.get(0);
+        }
 
-        //строчка ниже это return тоесть сейчас метод всегда возвращает 0, вне зависимости от a и b
-        return 0;
+        else {
+            for (int d = 2; d < a; d++) {
+                int i = b / d;
+                if (b % d == 0)
+                    list.add(i);
+            }
+            for (int d = list.size() - 1; d > 0; d--) {
+                if (a % list.get(d - 1) != 0)
+                    list.remove(d - 1);
+            }
+            return list.get(0);
+        }
     }
 
     public static void main(String[] args) {
