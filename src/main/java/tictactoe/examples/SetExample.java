@@ -9,13 +9,18 @@ public class SetExample {
     public static void main(String[] args) {
         Set<String> set1 = new HashSet<>();
         Set<String> set2 = new HashSet<>();
+        Set<String> set3 = new HashSet<>();
 
         set1.add("a");
         set1.add("b");
         set1.add("c");
         set2.add("a");
         set2.add("c");
+        set3.toArray(new String[]{"as"});
+        String str = set3.toString();
 
+        System.out.println(set1);
+        System.out.println(set3);
         set2.removeAll(set1);
 
         System.out.println(set2);

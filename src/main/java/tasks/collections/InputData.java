@@ -18,7 +18,7 @@ import java.util.List;
 
 
 
-    public  LinkedList madeLinkedListNew(String strA, String strB) {  // метод собирания List зависимости от того будет
+    public LinkedList madeLinkedListNew(String strA, String strB) {  // метод собирания List зависимости от того будет
         List<Character> linkList = new LinkedList<>();                // добавление новых пар скобок или нет
 
         if (strB == null) {

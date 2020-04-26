@@ -1,5 +1,7 @@
 package tasks.collections;
 
+import sun.net.util.IPAddressUtil;
+
 import java.util.LinkedList;
 import java.util.Scanner;
 
@@ -28,6 +30,10 @@ public class ValidParentheses {
         // (*) Сделать так, чтобы добавить новый вид скобок можно было максимально просто и понятно.
 
         // создание двух LinkedList
+
+
+
+
         InputData input = new InputData();
         LinkedList bracket = input.madeLinkedListNew(strA, inBrecket); // List из введеных скобок
         LinkedList pairBracket = input.madeLinkedListNew(input.getListData(), inBrecket); // List из валидных пар :{}[]()

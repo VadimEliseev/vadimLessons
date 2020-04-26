@@ -14,9 +14,7 @@ public class ReverseArray {
     }
 
     public static void main(String[] args) {
-        String[]  myarray = {"Bob","Ivan","Garry","Tom"};
-        System.out.println("Input Array :"+Arrays.toString(myarray));
-        System.out.println("Output Array :"+Arrays.toString(reverseArray(myarray)));
+
 
     }
 }
